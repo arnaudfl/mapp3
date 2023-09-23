@@ -8,6 +8,7 @@
     onMount(async () => {
         if(browser) {
             const leaflet = await import('leaflet');
+            const { MarkerClusterGroup }: any = await import('leaflet.markercluster')
             
             map = leaflet.map(mapElement).setView([46.545, 2.527], 6);
             
@@ -15,9 +16,44 @@
                 attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
             }).addTo(map);
             
-            leaflet.marker([45.7728, 3.1198]).addTo(map)
-            .bindPopup('A pretty CSS3 popup.<br> Easily customizable.')
-            .openPopup();
+            // ------------------------------------------------------------
+            // async function to get data from json
+            async function fetchData(url: string) {
+                try {
+                    const response = await fetch(url);
+                    const data = await response.json();
+                    return data;
+                } catch (err) {
+                    console.error(err);
+                }
+            }
+            
+            // L.MarkerClusterGroup extends L.FeatureGroup
+            // by clustering the markers contained within
+            let markers = new MarkerClusterGroup()
+            
+            let featureGroups: any[] = [];
+            
+            // function to add markers to map
+            fetchData("./places.json")
+            .then((data) => {
+                data.map((marker: any) => {
+                    featureGroups.push(
+                    leaflet.marker(marker.coords, {
+                        title: marker.title,
+                    })
+                    );
+                })
+                return data;
+            })
+            .then((data) => {
+                featureGroups.map((marker) => {
+                    markers.addLayer(marker);
+                });
+                
+                // Add all markers to map
+                map.addLayer(markers);
+            });
         }
     });
     
@@ -35,6 +71,7 @@
 
 <style>
     @import 'leaflet/dist/leaflet.css';
+    @import 'leaflet.markercluster/dist/MarkerCluster.Default.css';
     #map {
         height: 800px;
         width: 800px;
