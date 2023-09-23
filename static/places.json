@@ -1,0 +1,56 @@
+[
+    {
+        "id": 5,
+        "coords": [45.7777, 3.0818],
+        "title": "Arnaud F.",
+        "city": "Clermont-Ferrand",
+        "img": {
+            "src": "./images/5.jpg",
+            "alt": ""
+        },
+        "description": "Développeur Full-stack",
+        "stack": ["react", "js"],
+        "hobbies": "jeux-vidéo, films, séries",
+        "social": {
+            "linkedin": "afenerol",
+            "github": "arnaudfl",
+            "twitter": "4rn4udf"
+        }
+    },
+    {
+        "id": 2,
+        "coords": [43.2993, 5.3696],
+        "title": "",
+        "city": "",
+        "img": {
+            "src": "",
+            "alt": ""
+        },
+        "description": "",
+        "stack": [],
+        "hobbies": "",
+        "social": {
+            "linkedin": "",
+            "github": "",
+            "twitter": ""
+        }
+    },
+    {
+        "id": 3,
+        "coords": [43.5307, 5.4478],
+        "title": "",
+        "city": "",
+        "img": {
+            "src": "",
+            "alt": ""
+        },
+        "description": "",
+        "stack": [],
+        "hobbies": "",
+        "social": {
+            "linkedin": "",
+            "github": "",
+            "twitter": ""
+        }
+    }
+]
