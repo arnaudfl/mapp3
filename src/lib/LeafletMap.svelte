@@ -1,26 +1,26 @@
 <script lang="ts">
     import { onMount, onDestroy } from 'svelte';
     import { browser } from '$app/environment';
-
+    
     let mapElement: any;
     let map: any;
-
+    
     onMount(async () => {
         if(browser) {
             const leaflet = await import('leaflet');
-
-            map = leaflet.map(mapElement).setView([51.505, -0.09], 13);
-
+            
+            map = leaflet.map(mapElement).setView([46.545, 2.527], 6);
+            
             leaflet.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
                 attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
             }).addTo(map);
-
-            leaflet.marker([51.5, -0.09]).addTo(map)
-                .bindPopup('A pretty CSS3 popup.<br> Easily customizable.')
-                .openPopup();
+            
+            leaflet.marker([45.7728, 3.1198]).addTo(map)
+            .bindPopup('A pretty CSS3 popup.<br> Easily customizable.')
+            .openPopup();
         }
     });
-
+    
     onDestroy(async () => {
         if(map) {
             console.log('Unloading Leaflet map.');
@@ -29,15 +29,14 @@
     });
 </script>
 
-
 <main>
-    <div bind:this={mapElement}></div>
+    <div id="map" bind:this={mapElement}></div>
 </main>
 
 <style>
     @import 'leaflet/dist/leaflet.css';
-    main div {
-        height: 600px;
-        width: 600px;
+    #map {
+        height: 800px;
+        width: 800px;
     }
 </style>

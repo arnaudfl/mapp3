@@ -2,9 +2,15 @@
 	import { page } from '$app/stores';
 </script>
 
-<header class="container">
-    <hgroup>
-      <h1>Pico</h1>
-      <h2>A starter example with all elements and components used in Pico design system.</h2>
-    </hgroup>
-</header>
+<div class="header">
+  <h1 class="brand-title">A Sample Blog</h1>
+  <h2 class="brand-tagline">Creating a blog layout using Pure</h2>
+
+  <nav class="nav">
+      <ul class="nav-list">
+          <li class="nav-item">
+              <a class="pure-button" href="http://purecss.io">Pure</a>
+          </li>
+      </ul>
+  </nav>
+</div>
