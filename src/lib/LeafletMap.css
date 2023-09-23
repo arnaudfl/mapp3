@@ -1,6 +1,7 @@
 .map-container {
     position: relative;
-    min-height: 100%;
+    width: 100%;
+    height: 400px;
     margin: 0;
     padding: 0;
     font-family: "Lato", sans-serif;
@@ -8,8 +9,8 @@
 }
 
 #map {
-    height: 800px;
-    width: 800px;
+    width: 100%;
+    height: 100%;
 }
 
 svg:not(:root) {
@@ -21,15 +22,16 @@ svg:not(:root) {
 }
 
 .active-sidebar .leaflet-left {
-    transform: translateX(490px);
+    transform: translateX(210px);
 }
 
 .sidebarm {
+    font-family: Montserrat, sans-serif;
     display: none;
     position: absolute;
     width: 100%;
-    max-width: 480px;
-    z-index: 99999;
+    max-width: 200px;
+    z-index: 999;
     background: #fff;
     overflow: hidden;
     height: 100%;
@@ -67,34 +69,58 @@ svg:not(:root) {
 }
 
 .active-sidebar .sidebarm {
-    max-width: 560px;
+    max-width: 200px;
     width: 100%;
     transform: translateX(0);
 }
 
-@media (min-width: 768px) {
-    .sidebarm {
-        top: 10px;
-        left: 10px;
-        border-radius: 5px;
-        height: calc(100% - 20px);
-        transition: transform 0.3s ease-in-out;
-    }
-    
-    .active-sidebar .sidebarm {
-        max-width: 480px;
-        width: 100%;
-        transform: translateX(0);
-        transition: transform 0.3s ease-in-out;
-    }
-    
-    .active-sidebar .leaflet-left {
-        transform: translateX(485px);
-        transition: transform 350ms;
-    }
-}
+.card{
+    user-select: none;
+    margin:0;
+    background: #231e39;
+    color: #b3b8cd;
+    border-radius: 5px;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 10px 20px -10px rgba(0,0,0,.75);
+  }
+  .cover-photo{
+    background: url(https://images.unsplash.com/photo-1540228232483-1b64a7024923?ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80);
+    height: 120px;
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+  }
+  .profile{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    margin: 93px 0 0 -115px;
+    border: 1px solid #1f1a32;
+    padding: 7px;
+    background: #292343;
+  }
+  .profile-name{
+    font-size: 16px;
+    font-weight: bold;
+    margin: 27px 0 0 80px;
+  }
+  .about{
+    margin-top: 35px;
+    line-height: 21px;
+  }
+  .card i{
+    padding-left: 20px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: .5s;
+  }
+  .card i:hover{
+    color: #03bfbc;
+  }
 
-.close-button {
+  .close-button {
     cursor: pointer;
     position: absolute;
     top: 10px;
@@ -122,21 +148,61 @@ svg:not(:root) {
     pointer-events: none;
 }
 
-.sidebar-menu {
+@media (min-width: 768px) {
+    .map-container {
+        width:100%;
+        height: 600px;
+    }
+    .sidebarm {
+        top: 10px;
+        left: 10px;
+        border-radius: 5px;
+        height: calc(100% - 20px);
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    .active-sidebar .sidebarm {
+        max-width: 350px;
+        width: 100%;
+        transform: translateX(0);
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    .active-sidebar .leaflet-left {
+        transform: translateX(360px);
+        transition: transform 350ms;
+    }
+
+    .card {
+        width: 100%;
+    }
+    .cover-photo {
+        height: 160px;
+    }
+    .profile{
+        height: 120px;
+        width: 120px;
+    }
+}
+
+/* .sidebar-menu {
     display: flex;
     flex-direction: column;
     list-style: none;
     height: 100%;
 }
 
-/* sidebar-content */
 .sidebar-content {
-    height: inherit;
+    display: block;
+    height: 100%;
+    width:100%;
 }
 
 .sidebar-content h1 {
     position: sticky;
     top: 0;
+    margin: 0;
+    padding: 0;
     color: #fff;
     background: #0052b1;
     padding: 10px 35px 10px 15px;
@@ -183,10 +249,11 @@ svg:not(:root) {
 .info-content::-webkit-scrollbar-thumb {
     background-color: #003764;
     outline: 1px solid #002449;
-}
+} */
+  
 
 /* marker */
-.leaflet-marker-icon {
+/* .leaflet-marker-icon {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -216,4 +283,4 @@ svg:not(:root) {
     100% {
         box-shadow: 0 0 0 0 rgba(255, 0, 0, 0);
     }
-}
+} */
