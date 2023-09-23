@@ -1,0 +1,24 @@
+[
+    {
+        "id": 1,
+        "coords": [45.7728, 3.1198],
+        "title": "Chez moi",
+        "small": "small",
+        "img": {
+            "src": "",
+            "alt": ""
+        },
+        "description": "<p>description</p>"
+    },
+    {
+        "id": 2,
+        "coords": [43.2934, 5.4218],
+        "title": "Marseille",
+        "small": "small",
+        "img": {
+            "src": "",
+            "alt": ""
+        },
+        "description": "<p>description</p>"
+    }
+]

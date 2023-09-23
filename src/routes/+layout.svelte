@@ -8,8 +8,6 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/grids-responsive-min.css">
 </svelte:head>
 
-
-
 <div id="layout" class="pure-g">
   <div class="sidebar pure-u-1 pure-u-md-1-4">
     <Header />
