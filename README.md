@@ -1,6 +1,8 @@
 # 📍 MapP3
 > Projet de trombinoscope du **Best Group Ever** ⭐P3
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e595e841-ce6d-4392-b43c-60320adf6e15/deploy-status)](https://app.netlify.com/sites/mapp3/deploys)
+
 ## 💊 Stack Technique
 > Ce projet utilise la stack technique suivante :
 
