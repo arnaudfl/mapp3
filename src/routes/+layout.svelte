@@ -16,13 +16,37 @@
     
     <div class="content pure-u-1 pure-u-md-3-4">
         <div>
-            <slot />
+            <div class="posts">
+
+                <!-- A single blog post -->
+                <section class="post">
+                    <header class="post-header">
+                        <img width="48" height="48" alt="Tilo Mitra&#x27;s avatar" class="post-avatar" src="./images/5.jpg">
+
+                        <h2 class="post-title">Trombinoscope du Best Group Ever ⭐P3</h2>
+
+                        <p class="post-meta">
+                            Par <a href="https://github.com/arnaudfl" class="post-author">arnaudfl</a>
+                            avec <span class="post-category post-category-design">CSS</span>
+                            <span class="post-category post-category-pure">Pure</span>
+                            <span class="post-category post-category-js">Svelte</span>
+                            <span class="post-category post-category-yui">Leaflet</span>
+                        </p>
+                    </header>
+
+                    <div class="post-description">
+                        <p>&nbsp;</p>
+                        <slot />
+                    </div>
+                </section>
+            </div>
             
             <div class="footer">
                 <div class="pure-menu pure-menu-horizontal">
                     <ul>
-                        <li class="pure-menu-item"><a href="http://purecss.io/" class="pure-menu-link">About</a></li>
-                        <li class="pure-menu-item"><a href="http://github.com/pure-css/pure/" class="pure-menu-link">GitHub</a></li>
+                        <li class="pure-menu-item">Built with <a href="http://purecss.io/" class="pure-menu-link">purecss</a></li>
+                        <li class="pure-menu-item">&bull; Powered by <a href="https://svelte.dev/" class="pure-menu-link">Svelte</a></li>
+                        <li class="pure-menu-item">&bull; Developed by <a href="https://github.com/arnaudfl" class="pure-menu-link">arnaudfl</a></li>
                     </ul>
                 </div>
             </div>

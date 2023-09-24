@@ -29,7 +29,7 @@
             "alt": ""
         },
         "description": "Concepteur Développeur d'applications | #Symfony | #Wordpress | #DevOps |",
-        "stack": ["php", "symfony", "html", "css", "js"],
+        "stack": ["php", "symfony", "html5", "css3", "js"],
         "hobbies": "Foot (pratique), manage artiste hip-hop / rap",
         "social": {
             "linkedin": "mehdi-rezgane",
@@ -86,7 +86,7 @@
             "alt": ""
         },
         "description": "Développeur application web 💻 CDA DevOps",
-        "stack": ["react", "js", "php", "nodejs"],
+        "stack": ["react", "js", "php", "node-js"],
         "hobbies": "jeux-vidéo, films, séries",
         "social": {
             "linkedin": "afenerol",
@@ -105,7 +105,7 @@
             "alt": ""
         },
         "description": "",
-        "stack": ["laravel", "php", "html", "css", "js"],
+        "stack": ["laravel", "php", "html5", "css3", "js"],
         "hobbies": "",
         "social": {
             "linkedin": "",
@@ -181,7 +181,7 @@
             "alt": ""
         },
         "description": "Conceptrice Développeuse d'Application en environnement DevOps 💻 | Technicienne support 💼",
-        "stack": ["php", "html", "css", "js"],
+        "stack": ["php", "html5", "css3", "js"],
         "hobbies": "Jeux vidéo, dramas coréens",
         "social": {
             "linkedin": "andrealpz",
@@ -238,7 +238,7 @@
             "alt": ""
         },
         "description": "",
-        "stack": ["php", "sails", "js", "nodejs"],
+        "stack": ["php", "sails", "js", "node-js"],
         "hobbies": "Tech, crypto, foot",
         "social": {
             "linkedin": "",
