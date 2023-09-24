@@ -86,7 +86,7 @@ svg:not(:root) {
     box-shadow: 0 10px 20px -10px rgba(0,0,0,.75);
   }
   .cover-photo{
-    background: url(https://images.unsplash.com/photo-1540228232483-1b64a7024923?ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80);
+    /* background: url(https://images.unsplash.com/photo-1540228232483-1b64a7024923?ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80); */
     height: 120px;
     width: 100%;
     border-radius: 5px 5px 0 0;
@@ -109,6 +109,9 @@ svg:not(:root) {
     margin-top: 35px;
     line-height: 21px;
   }
+  .card a {
+    text-decoration: none;
+  }
   .card i{
     padding-left: 20px;
     font-size: 20px;
@@ -119,6 +122,15 @@ svg:not(:root) {
   .card i:hover{
     color: #03bfbc;
   }
+
+  .marker-id {
+    font-size: 1.5rem;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: rgba(255, 255, 255, 0.5);
+}
 
   .close-button {
     cursor: pointer;
@@ -146,6 +158,14 @@ svg:not(:root) {
     height: 20px;
     fill: #3f3f3f;
     pointer-events: none;
+}
+
+.stack {
+    font-size: 12px;
+}
+.hobbies {
+    padding:10px;
+    font-size: 14px;
 }
 
 @media (min-width: 768px) {
@@ -182,7 +202,16 @@ svg:not(:root) {
     .profile{
         height: 120px;
         width: 120px;
+        margin: 93px 0 0 -175px;
     }
+    .profile-name {
+        font-size: 25px;
+        margin: 27px 0 0 120px;
+    }
+    .about{
+        margin-top: 35px;
+        line-height: 21px;
+      }
 }
 
 /* .sidebar-menu {
