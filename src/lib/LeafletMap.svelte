@@ -3,6 +3,7 @@
     import { browser } from '$app/environment';
 
     import renderProfileCard from './ProfileCard';
+	import type { FeatureGroup, LatLngBounds } from 'leaflet';
     
     let mapElement: any;
     let map: any;
@@ -15,7 +16,7 @@
             // config map
             let config = {
                 minZoom: 6,
-                maxZoom: 18,
+                maxZoom: 10,
             };
             // magnification with which the map will start
             const zoom = 6;
@@ -62,7 +63,6 @@
                         "marker-options-id": marker.id,
                     })
                     );
-                    // latlngs.push(marker.coords);
                 });
                 return data;
             })
@@ -77,7 +77,7 @@
                 map.addLayer(markers);
                 
                 // create feature group with markers
-                groupBounds = new leaflet.featureGroup(featureGroups);
+                groupBounds = leaflet.featureGroup(featureGroups);
                 
                 // fitBounds of feature group to map
                 map.fitBounds(groupBounds.getBounds(), {
@@ -164,13 +164,14 @@
             // --------------------------------------------------
             // bounds map when sidebar is open
             function boundsMap(coords?: any) {
-                const sidebar: HTMLElement | null = document.querySelector(".sidebarm");
-                if (!!sidebar) {
-                    sidebar.offsetWidth
+                const sidebar = document.querySelector(".sidebarm") as HTMLElement;
+                const sidebarWidth = sidebar?.offsetWidth;
+
+                let group!: FeatureGroup<any>;
+                if (!!coords) {
+                    const marker = leaflet.marker(coords);
+                    group = leaflet.featureGroup([marker]);
                 }
-                
-                const marker = leaflet.marker(coords);
-                const group = leaflet.featureGroup([marker]);
                 
                 // bounds depending on whether we have a marker or not
                 const bounds = coords ? group.getBounds() : groupBounds.getBounds();
@@ -178,7 +179,7 @@
                 // set bounds of map depending on sidebar
                 // width and feature group bounds
                 map.fitBounds(bounds, {
-                    paddingTopLeft: [coords ? sidebar : 0, 10],
+                    paddingTopLeft: [coords ? sidebarWidth : 0, 10],
                 });
             }
         }
