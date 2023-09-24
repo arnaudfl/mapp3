@@ -21,8 +21,9 @@
             <div class="footer">
                 <div class="pure-menu pure-menu-horizontal">
                     <ul>
-                        <li class="pure-menu-item"><a href="http://purecss.io/" class="pure-menu-link">About</a></li>
-                        <li class="pure-menu-item"><a href="http://github.com/pure-css/pure/" class="pure-menu-link">GitHub</a></li>
+                        <li class="pure-menu-item">Built with <a href="http://purecss.io/" class="pure-menu-link">purecss</a></li>
+                        <li class="pure-menu-item">&bull; Powered by <a href="https://svelte.dev/" class="pure-menu-link">Svelte</a></li>
+                        <li class="pure-menu-item">&bull; Developed by <a href="https://github.com/arnaudfl" class="pure-menu-link">arnaudfl</a></li>
                     </ul>
                 </div>
             </div>
