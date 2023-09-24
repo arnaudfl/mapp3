@@ -1,9 +1,9 @@
 <script lang="ts">
     import { onMount, onDestroy } from 'svelte';
     import { browser } from '$app/environment';
-
+    
     import renderProfileCard from './ProfileCard';
-	import type { FeatureGroup, LatLngBounds } from 'leaflet';
+    import type { FeatureGroup, LatLngBounds } from 'leaflet';
     
     let mapElement: any;
     let map: any;
@@ -53,6 +53,20 @@
             let featureGroups: any[] = [];
             let groupBounds: any;
             
+            const iconRetinaUrl = './images/leaflet/marker-icon-2x.png';
+            const iconUrl = './images/leaflet/marker-icon.png';
+            const shadowUrl = './images/leaflet/marker-shadow.png';
+            const iconDefault = leaflet.icon({
+                iconRetinaUrl,
+                iconUrl,
+                shadowUrl,
+                iconSize: [25, 41],
+                iconAnchor: [12, 41],
+                popupAnchor: [1, -34],
+                tooltipAnchor: [16, -28],
+                shadowSize: [41, 41]
+            });
+            
             // function to add markers to map
             fetchData("./places.json")
             .then((data) => {
@@ -60,6 +74,7 @@
                 data.map((marker: any) => {
                     featureGroups.push(
                     leaflet.marker(marker.coords, {
+                        icon: iconDefault,
                         "marker-options-id": marker.id,
                     })
                     );
@@ -166,54 +181,54 @@
             function boundsMap(coords?: any) {
                 const sidebar = document.querySelector(".sidebarm") as HTMLElement;
                 const sidebarWidth = sidebar?.offsetWidth;
-
+                
                 let group!: FeatureGroup<any>;
-                if (!!coords) {
-                    const marker = leaflet.marker(coords);
-                    group = leaflet.featureGroup([marker]);
+                    if (!!coords) {
+                        const marker = leaflet.marker(coords);
+                        group = leaflet.featureGroup([marker]);
+                    }
+                    
+                    // bounds depending on whether we have a marker or not
+                    const bounds = coords ? group.getBounds() : groupBounds.getBounds();
+                    
+                    // set bounds of map depending on sidebar
+                    // width and feature group bounds
+                    map.fitBounds(bounds, {
+                        paddingTopLeft: [coords ? sidebarWidth : 0, 10],
+                    });
                 }
-                
-                // bounds depending on whether we have a marker or not
-                const bounds = coords ? group.getBounds() : groupBounds.getBounds();
-                
-                // set bounds of map depending on sidebar
-                // width and feature group bounds
-                map.fitBounds(bounds, {
-                    paddingTopLeft: [coords ? sidebarWidth : 0, 10],
-                });
             }
-        }
-    });
+        });
+        
+        onDestroy(async () => {
+            if(map) {
+                console.log('Unloading Leaflet map.');
+                map.remove();
+            }
+        });
+    </script>
     
-    onDestroy(async () => {
-        if(map) {
-            console.log('Unloading Leaflet map.');
-            map.remove();
-        }
-    });
-</script>
-
-<main class="map-container">
-    <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
-        <symbol id="icon-clear" viewBox="0 0 24 24">
-            <path
-            d="M18.984 6.422 13.406 12l5.578 5.578-1.406 1.406L12 13.406l-5.578 5.578-1.406-1.406L10.594 12 5.016 6.422l1.406-1.406L12 10.594l5.578-5.578z"
-            />
-        </symbol>
-    </svg>
+    <main class="map-container">
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+            <symbol id="icon-clear" viewBox="0 0 24 24">
+                <path
+                d="M18.984 6.422 13.406 12l5.578 5.578-1.406 1.406L12 13.406l-5.578 5.578-1.406-1.406L10.594 12 5.016 6.422l1.406-1.406L12 10.594l5.578-5.578z"
+                />
+            </symbol>
+        </svg>
+        
+        <div class="sidebarm good">
+            <button aria-label="close sidebar" type="button" class="close-button">
+                <svg>
+                    <use xlink:href="#icon-clear" />
+                </svg>
+            </button>
+        </div>
+        <div id="map" bind:this={mapElement}></div>
+    </main>
     
-    <div class="sidebarm good">
-        <button aria-label="close sidebar" type="button" class="close-button">
-            <svg>
-                <use xlink:href="#icon-clear" />
-            </svg>
-        </button>
-    </div>
-    <div id="map" bind:this={mapElement}></div>
-</main>
-
-<style>
-    @import 'leaflet/dist/leaflet.css';
-    @import '$lib/LeafletMap.css';
-    @import 'leaflet.markercluster/dist/MarkerCluster.Default.css';
-</style>
+    <style>
+        @import 'leaflet/dist/leaflet.css';
+        @import '$lib/LeafletMap.css';
+        @import 'leaflet.markercluster/dist/MarkerCluster.Default.css';
+    </style>
