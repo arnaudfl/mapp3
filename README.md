@@ -1,9 +1,11 @@
 # 📍 MapP3
+
 > Projet de trombinoscope du **Best Group Ever** ⭐P3
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/e595e841-ce6d-4392-b43c-60320adf6e15/deploy-status)](https://app.netlify.com/sites/mapp3/deploys)
 
 ## 💊 Stack Technique
+
 > Ce projet utilise la stack technique suivante :
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)

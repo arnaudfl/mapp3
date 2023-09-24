@@ -1,268 +1,268 @@
 [
-    {
-        "id": 1,
-        "coords": [47.3900,0.6880],
-        "title": "Ali Moussaev",
-        "city": "Tours",
-        "bg": "./images/cities/tours.jpg",
-        "img": {
-            "src": "./images/1.jpg",
-            "alt": ""
-        },
-        "description": "",
-        "stack": ["Delphi"],
-        "hobbies": "Voyage",
-        "social": {
-            "linkedin": "",
-            "github": "ali-moussaev",
-            "twitter": ""
-        }
-    },
-    {
-        "id": 2,
-        "coords": [44.8413,-0.5788],
-        "title": "Mehdi Rezgane",
-        "city": "Bordeaux",
-        "bg": "./images/cities/bordeaux.jpg",
-        "img": {
-            "src": "./images/2.jpg",
-            "alt": ""
-        },
-        "description": "Concepteur Développeur d'applications | #Symfony | #Wordpress | #DevOps |",
-        "stack": ["php", "symfony", "html5", "css3", "js"],
-        "hobbies": "Foot (pratique), manage artiste hip-hop / rap",
-        "social": {
-            "linkedin": "mehdi-rezgane",
-            "github": "FlexCodeur",
-            "twitter": ""
-        }
-    },
-    {
-        "id": 3,
-        "coords": [46.0217,3.2020],
-        "title": "Kimberly Moreau",
-        "city": "Aigueperse",
-        "bg": "./images/cities/aigueperse.jpg",
-        "img": {
-            "src": "./images/3.jpg",
-            "alt": ""
-        },
-        "description": "🚀 Développeuse web & web mobile",
-        "stack": ["laravel", "react"],
-        "hobbies": "Lecture, origami",
-        "social": {
-            "linkedin": "magali-k-moreau",
-            "github": "mikaocko",
-            "twitter": ""
-        }
-    },
-    {
-        "id": 4,
-        "coords": [45.8329,2.8517],
-        "title": "Nicolas Troc",
-        "city": "Pontgibaud",
-        "bg": "./images/cities/pontgibaud.jpg",
-        "img": {
-            "src": "./images/4.jpg",
-            "alt": ""
-        },
-        "description": "Concepteur Développeur d'Applications 💻",
-        "stack": ["python", "js", "react"],
-        "hobbies": "Randonnée, musique, JDR",
-        "social": {
-            "linkedin": "ntroc763",
-            "github": "ColasCitron",
-            "twitter": ""
-        }
-    },
-    {
-        "id": 5,
-        "coords": [45.7777, 3.0818],
-        "title": "Arnaud F.",
-        "city": "Clermont-Ferrand",
-        "bg": "./images/cities/clermont-ferrand.jpg",
-        "img": {
-            "src": "./images/5.jpg",
-            "alt": ""
-        },
-        "description": "Développeur application web 💻 CDA DevOps",
-        "stack": ["react", "js", "php", "node-js"],
-        "hobbies": "jeux-vidéo, films, séries",
-        "social": {
-            "linkedin": "afenerol",
-            "github": "arnaudfl",
-            "twitter": "4rn4udf"
-        }
-    },
-    {
-        "id": 6,
-        "coords": [45.8555,3.5486],
-        "title": "Smaïn Kaya",
-        "city": "Thiers",
-        "bg": "./images/cities/thiers.jpg",
-        "img": {
-            "src": "./images/6.jpg",
-            "alt": ""
-        },
-        "description": "",
-        "stack": ["laravel", "php", "html5", "css3", "js"],
-        "hobbies": "",
-        "social": {
-            "linkedin": "",
-            "github": "KAYA-SMAIN",
-            "twitter": ""
-        }
-    },
-    {
-        "id": 7,
-        "coords": [43.6038,1.4450],
-        "title": "Aurélien Georges",
-        "city": "Toulouse",
-        "bg": "./images/cities/toulouse.jpg",
-        "img": {
-            "src": "./images/7.jpg",
-            "alt": ""
-        },
-        "description": "Développeur web et web mobile",
-        "stack": ["symfony", "react", "bootstrap"],
-        "hobbies": "Marche, musique, musculation",
-        "social": {
-            "linkedin": "aur%C3%A9lien-georges-910466144",
-            "github": "AurelienGEORGES",
-            "twitter": ""
-        }
-    },
-    {
-        "id": 8,
-        "coords": [43.6321,1.4268],
-        "title": "Hava Bakrieva",
-        "city": "Toulouse",
-        "bg": "./images/cities/toulouse.jpg",
-        "img": {
-            "src": "./images/8.jpg",
-            "alt": ""
-        },
-        "description": "Développeuse Web 👩‍💻 | A la recherche d'une alternance",
-        "stack": ["vuejs"],
-        "hobbies": "Lecture, DIY, dessin",
-        "social": {
-            "linkedin": "hava-bakrieva",
-            "github": "Havakii",
-            "twitter": ""
-        }
-    },
-    {
-        "id": 9,
-        "coords": [45.1884,5.7355],
-        "title": "Lucas Bosak",
-        "city": "Grenoble",
-        "bg": "./images/cities/grenoble.jpg",
-        "img": {
-            "src": "./images/9.jpg",
-            "alt": ""
-        },
-        "description": "Étudiant(e) à Simplon.co",
-        "stack": ["react"],
-        "hobbies": "organisateur d'évènements",
-        "social": {
-            "linkedin": "lucas-bosak",
-            "github": "Kalsak15",
-            "twitter": ""
-        }
-    },
-    {
-        "id": 10,
-        "coords": [43.9494,4.8065],
-        "title": "Andrea Lopez",
-        "city": "Avignon",
-        "bg": "./images/cities/avignon.jpg",
-        "img": {
-            "src": "./images/10.jpg",
-            "alt": ""
-        },
-        "description": "Conceptrice Développeuse d'Application en environnement DevOps 💻 | Technicienne support 💼",
-        "stack": ["php", "html5", "css3", "js"],
-        "hobbies": "Jeux vidéo, dramas coréens",
-        "social": {
-            "linkedin": "andrealpz",
-            "github": "Andrealpz",
-            "twitter": ""
-        }
-    },
-    {
-        "id": 11,
-        "coords": [43.5824,5.0015],
-        "title": "Alan Zarli",
-        "city": "Marseille",
-        "bg": "./images/cities/marseille.jpg",
-        "img": {
-            "src": "./images/11.jpg",
-            "alt": ""
-        },
-        "description": "Développeur web junior, en alternance Concepteur Développeur d'Applications",
-        "stack": ["js", "react"],
-        "hobbies": "Musique, animés, mangas",
-        "social": {
-            "linkedin": "alan-zarli-3a126423b",
-            "github": "alanzarli",
-            "twitter": ""
-        }
-    },
-    {
-        "id": 12,
-        "coords": [43.5287,5.4451],
-        "title": "Sébastien Criado",
-        "city": "Aix-en-Provence",
-        "bg": "./images/cities/aix-en-provence.jpg",
-        "img": {
-            "src": "./images/12.jpg",
-            "alt": ""
-        },
-        "description": "Développeur PHP/Symfony chez Liaisons Habitat",
-        "stack": ["symfony", "angular", "react"],
-        "hobbies": "Foot, musique électronqie, voyages, cuisine",
-        "social": {
-            "linkedin": "s%C3%A9bastien-criado-19427a212",
-            "github": "sebcriado",
-            "twitter": ""
-        }
-    },
-    {
-        "id": 13,
-        "coords": [43.3289,5.4327],
-        "title": "Michael Zekri",
-        "city": "Marseille",
-        "bg": "./images/cities/marseille.jpg",
-        "img": {
-            "src": "./images/13.jpg",
-            "alt": ""
-        },
-        "description": "",
-        "stack": ["php", "sails", "js", "node-js"],
-        "hobbies": "Tech, crypto, foot",
-        "social": {
-            "linkedin": "",
-            "github": "MikeZek",
-            "twitter": ""
-        }
-    },
-    {
-        "id": 14,
-        "coords": [43.2815,5.4056],
-        "title": "Rémi Bufnoir",
-        "city": "Marseille",
-        "bg": "./images/cities/marseille.jpg",
-        "img": {
-            "src": "./images/14.jpg",
-            "alt": ""
-        },
-        "description": "Développeur web en alternance à Marseille",
-        "stack": ["php", "js", "symfony"],
-        "hobbies": "Lecture, jeux vidéo, pâtisserie",
-        "social": {
-            "linkedin": "rémi-bufnoir-82029a265",
-            "github": "rbufnoir",
-            "twitter": ""
-        }
-    }
+	{
+		"id": 1,
+		"coords": [47.39, 0.688],
+		"title": "Ali Moussaev",
+		"city": "Tours",
+		"bg": "./images/cities/tours.jpg",
+		"img": {
+			"src": "./images/1.jpg",
+			"alt": ""
+		},
+		"description": "",
+		"stack": ["Delphi"],
+		"hobbies": "Voyage",
+		"social": {
+			"linkedin": "",
+			"github": "ali-moussaev",
+			"twitter": ""
+		}
+	},
+	{
+		"id": 2,
+		"coords": [44.8413, -0.5788],
+		"title": "Mehdi Rezgane",
+		"city": "Bordeaux",
+		"bg": "./images/cities/bordeaux.jpg",
+		"img": {
+			"src": "./images/2.jpg",
+			"alt": ""
+		},
+		"description": "Concepteur Développeur d'applications | #Symfony | #Wordpress | #DevOps |",
+		"stack": ["php", "symfony", "html5", "css3", "js"],
+		"hobbies": "Foot (pratique), manage artiste hip-hop / rap",
+		"social": {
+			"linkedin": "mehdi-rezgane",
+			"github": "FlexCodeur",
+			"twitter": ""
+		}
+	},
+	{
+		"id": 3,
+		"coords": [46.0217, 3.202],
+		"title": "Kimberly Moreau",
+		"city": "Aigueperse",
+		"bg": "./images/cities/aigueperse.jpg",
+		"img": {
+			"src": "./images/3.jpg",
+			"alt": ""
+		},
+		"description": "🚀 Développeuse web & web mobile",
+		"stack": ["laravel", "react"],
+		"hobbies": "Lecture, origami",
+		"social": {
+			"linkedin": "magali-k-moreau",
+			"github": "mikaocko",
+			"twitter": ""
+		}
+	},
+	{
+		"id": 4,
+		"coords": [45.8329, 2.8517],
+		"title": "Nicolas Troc",
+		"city": "Pontgibaud",
+		"bg": "./images/cities/pontgibaud.jpg",
+		"img": {
+			"src": "./images/4.jpg",
+			"alt": ""
+		},
+		"description": "Concepteur Développeur d'Applications 💻",
+		"stack": ["python", "js", "react"],
+		"hobbies": "Randonnée, musique, JDR",
+		"social": {
+			"linkedin": "ntroc763",
+			"github": "ColasCitron",
+			"twitter": ""
+		}
+	},
+	{
+		"id": 5,
+		"coords": [45.7777, 3.0818],
+		"title": "Arnaud F.",
+		"city": "Clermont-Ferrand",
+		"bg": "./images/cities/clermont-ferrand.jpg",
+		"img": {
+			"src": "./images/5.jpg",
+			"alt": ""
+		},
+		"description": "Développeur application web 💻 CDA DevOps",
+		"stack": ["react", "js", "php", "node-js"],
+		"hobbies": "jeux-vidéo, films, séries",
+		"social": {
+			"linkedin": "afenerol",
+			"github": "arnaudfl",
+			"twitter": "4rn4udf"
+		}
+	},
+	{
+		"id": 6,
+		"coords": [45.8555, 3.5486],
+		"title": "Smaïn Kaya",
+		"city": "Thiers",
+		"bg": "./images/cities/thiers.jpg",
+		"img": {
+			"src": "./images/6.jpg",
+			"alt": ""
+		},
+		"description": "",
+		"stack": ["laravel", "php", "html5", "css3", "js"],
+		"hobbies": "",
+		"social": {
+			"linkedin": "",
+			"github": "KAYA-SMAIN",
+			"twitter": ""
+		}
+	},
+	{
+		"id": 7,
+		"coords": [43.6038, 1.445],
+		"title": "Aurélien Georges",
+		"city": "Toulouse",
+		"bg": "./images/cities/toulouse.jpg",
+		"img": {
+			"src": "./images/7.jpg",
+			"alt": ""
+		},
+		"description": "Développeur web et web mobile",
+		"stack": ["symfony", "react", "bootstrap"],
+		"hobbies": "Marche, musique, musculation",
+		"social": {
+			"linkedin": "aur%C3%A9lien-georges-910466144",
+			"github": "AurelienGEORGES",
+			"twitter": ""
+		}
+	},
+	{
+		"id": 8,
+		"coords": [43.6321, 1.4268],
+		"title": "Hava Bakrieva",
+		"city": "Toulouse",
+		"bg": "./images/cities/toulouse.jpg",
+		"img": {
+			"src": "./images/8.jpg",
+			"alt": ""
+		},
+		"description": "Développeuse Web 👩‍💻 | A la recherche d'une alternance",
+		"stack": ["vuejs"],
+		"hobbies": "Lecture, DIY, dessin",
+		"social": {
+			"linkedin": "hava-bakrieva",
+			"github": "Havakii",
+			"twitter": ""
+		}
+	},
+	{
+		"id": 9,
+		"coords": [45.1884, 5.7355],
+		"title": "Lucas Bosak",
+		"city": "Grenoble",
+		"bg": "./images/cities/grenoble.jpg",
+		"img": {
+			"src": "./images/9.jpg",
+			"alt": ""
+		},
+		"description": "Étudiant(e) à Simplon.co",
+		"stack": ["react"],
+		"hobbies": "organisateur d'évènements",
+		"social": {
+			"linkedin": "lucas-bosak",
+			"github": "Kalsak15",
+			"twitter": ""
+		}
+	},
+	{
+		"id": 10,
+		"coords": [43.9494, 4.8065],
+		"title": "Andrea Lopez",
+		"city": "Avignon",
+		"bg": "./images/cities/avignon.jpg",
+		"img": {
+			"src": "./images/10.jpg",
+			"alt": ""
+		},
+		"description": "Conceptrice Développeuse d'Application en environnement DevOps 💻 | Technicienne support 💼",
+		"stack": ["php", "html5", "css3", "js"],
+		"hobbies": "Jeux vidéo, dramas coréens",
+		"social": {
+			"linkedin": "andrealpz",
+			"github": "Andrealpz",
+			"twitter": ""
+		}
+	},
+	{
+		"id": 11,
+		"coords": [43.5824, 5.0015],
+		"title": "Alan Zarli",
+		"city": "Marseille",
+		"bg": "./images/cities/marseille.jpg",
+		"img": {
+			"src": "./images/11.jpg",
+			"alt": ""
+		},
+		"description": "Développeur web junior, en alternance Concepteur Développeur d'Applications",
+		"stack": ["js", "react"],
+		"hobbies": "Musique, animés, mangas",
+		"social": {
+			"linkedin": "alan-zarli-3a126423b",
+			"github": "alanzarli",
+			"twitter": ""
+		}
+	},
+	{
+		"id": 12,
+		"coords": [43.5287, 5.4451],
+		"title": "Sébastien Criado",
+		"city": "Aix-en-Provence",
+		"bg": "./images/cities/aix-en-provence.jpg",
+		"img": {
+			"src": "./images/12.jpg",
+			"alt": ""
+		},
+		"description": "Développeur PHP/Symfony chez Liaisons Habitat",
+		"stack": ["symfony", "angular", "react"],
+		"hobbies": "Foot, musique électronqie, voyages, cuisine",
+		"social": {
+			"linkedin": "s%C3%A9bastien-criado-19427a212",
+			"github": "sebcriado",
+			"twitter": ""
+		}
+	},
+	{
+		"id": 13,
+		"coords": [43.3289, 5.4327],
+		"title": "Michael Zekri",
+		"city": "Marseille",
+		"bg": "./images/cities/marseille.jpg",
+		"img": {
+			"src": "./images/13.jpg",
+			"alt": ""
+		},
+		"description": "",
+		"stack": ["php", "sails", "js", "node-js"],
+		"hobbies": "Tech, crypto, foot",
+		"social": {
+			"linkedin": "",
+			"github": "MikeZek",
+			"twitter": ""
+		}
+	},
+	{
+		"id": 14,
+		"coords": [43.2815, 5.4056],
+		"title": "Rémi Bufnoir",
+		"city": "Marseille",
+		"bg": "./images/cities/marseille.jpg",
+		"img": {
+			"src": "./images/14.jpg",
+			"alt": ""
+		},
+		"description": "Développeur web en alternance à Marseille",
+		"stack": ["php", "js", "symfony"],
+		"hobbies": "Lecture, jeux vidéo, pâtisserie",
+		"social": {
+			"linkedin": "rémi-bufnoir-82029a265",
+			"github": "rbufnoir",
+			"twitter": ""
+		}
+	}
 ]
