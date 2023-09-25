@@ -3,7 +3,11 @@
 	import { browser } from '$app/environment';
 
 	import renderProfileCard from './ProfileCard';
-	import type { FeatureGroup } from 'leaflet';
+	import type { FeatureGroup, MarkerOptions } from 'leaflet';
+
+	interface CustomMarkerOptions extends MarkerOptions {
+		'marker-options-id': any;
+	}
 
 	let mapElement: any;
 	let map: any;
@@ -79,7 +83,7 @@
 							leaflet.marker(marker.coords, {
 								icon: iconDefault,
 								'marker-options-id': marker.id
-							})
+							} as CustomMarkerOptions)
 						);
 					});
 					return data;
