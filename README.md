@@ -4,6 +4,10 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/e595e841-ce6d-4392-b43c-60320adf6e15/deploy-status)](https://app.netlify.com/sites/mapp3/deploys)
 
+## :floppy_disk: Documentation
+
+Read my article [🌲Svelte + 🍃Leaflet + 📍 Clusters](https://dev.to/arnaudfl/svelte-leaflet-clusters-1fgb) to understand how to resolve certain issues during development.
+
 ## 💊 Stack Technique
 
 > Ce projet utilise la stack technique suivante :
